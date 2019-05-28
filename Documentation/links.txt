@@ -1,1 +1,3 @@
 http://www.angular.love/2017/02/16/angular-2-custom-validators/
+http://www.angular.love/2017/02/07/angular-2-model-driven-forms-cz-i-tworzymy-formularz-z-walidacja/
+https://jasonwatmore.com/post/2018/11/07/angular-7-reactive-forms-validation-example

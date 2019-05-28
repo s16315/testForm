@@ -3,4 +3,34 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<h2>Here are some links to help you start: </h2>
+<form [formGroup]="RegisteredUserData">
+  <label for="name">Imię: </label><input type="text" name="name" id="name" formControlName="name">
+  <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname" formControlName="surname">
+  <label for="email">e-mail: </label><input type="text" name="email" id="email" formControlName="email">
+  <label for="phone">Numer telefonu: </label><input type="text" name="phone" id="phone" formControlName="phone">
+  <div>
+    <label>Wybierz posiadane zwierzę:</label>
+    <div>
+      <label for="pet">pies</label><input type="radio" id="pet" name="pet" value="dog">
+    </div>
+    <div>
+      <label for="pet">kot</label><input type="radio" id="cat" name="cat" value="cat">
+    </div>
+    <div>
+      <label for="pet">inne</label><input type="radio" id="other" name="other" value="other">
+    </div>
+
+  </div>
+  <label for="password">Hasło: </label><input type="password" name="password" id="password" formControlName="password">
+  <div>
+    <label for="address">Adres: </label>
+    <fieldset formGroupName="address" name="address" id="address">
+      <label for="city">Miasto: </label><input type="text" name="city" id="city" formControlName="city">
+      <label for="street">Ulica: </label><input type="text" name="street" id="street" formControlName="street">
+      <label for="building">Nr domu: </label><input type="text" name="building" id="building"
+                                                    formControlName="building">
+      <label for="flatNo">Nr mieszkania: </label><input type="text" name="flatNo" id="flatNo" formControlName="flatNo">
+    </fieldset>
+  </div>
+
+</form>
